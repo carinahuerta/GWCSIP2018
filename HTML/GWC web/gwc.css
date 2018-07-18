@@ -1,0 +1,29 @@
+h1{
+  background-color:#33cc33;
+  text-align: center;
+  color :#0066ff;
+}
+a{
+  text-decoration: none;
+  padding:10%;
+  display: block;
+  width: 200px;
+}
+ul{
+  padding-left: 10%;
+  list-style-type: none;
+  overflow:hidden;
+}
+li{
+  float:left;
+}
+#about{
+  column-count: 2;
+}
+img{
+  align-content: space-between;
+  width: 500 px; height: 400px;
+}
+a:visited{
+  color: blue;
+}

@@ -1,0 +1,14 @@
+print =("welcome to hangman")
+word = ('o', 'r','a', 'n', 'g', 'e')
+blanks = ('_','_','_','_','_','_')
+
+maxfails = 7
+tries = 0
+while tries < 8:
+    print = (blanks)
+    guess = input ("Guess a letter: ")
+    for i in range (0, len(word)):
+        if guess == word [i]:
+            blanks [i] = guess
+    if (not(guess in word)):
+        tries += 1 

@@ -1,0 +1,41 @@
+header{
+  background-color:#A600FF;
+  color: #FFFFFF;
+  font-family: verdana;
+  padding-left: 5%;
+}
+
+a{
+  text-decoration: none;
+  padding:5%;
+  display: block;
+  width: 200px;
+}
+ul{
+  padding-left: 5%;
+  list-style-type: none;
+  overflow:hidden;
+}
+li{
+  float:left;
+}
+#about{
+  column-count: 2;
+}
+
+a:visited{
+  color: #FFFFFF;
+}
+h3{
+  font-family: cursive;
+}
+
+#images{
+  column-count: 4;
+}
+footer{
+  text-align: center;
+  font-family:monospace;
+  column-count: 2;
+  border: 0%
+}

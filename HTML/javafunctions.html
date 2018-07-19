@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <h1>
+    Java Script Funtions
+    </h1>
+  </header>
+  <body>
+    <p><h2>
+      Check if the Input is a number
+    </p></h2>
+    <input id= "n">
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <p id= "demo"></p>
+    <script>
+    function myFunction() {
+      var x,text;
+      x= document.getElementById("n").value;
+
+      if (isNaN(x) || x<1 || x>10){
+        text= "invalid input";
+      }else{
+        text= "input valid";
+      }
+      document.getElementById ("demo").innerHTML = text;
+      alert(text);
+    }
+</script>
+  <p><h2>
+    Enter a number to be multiplied by 3
+  </p></h2>
+  <input id= "num1">
+  <button type= "button" onclick= "myMath()">Submit</button>
+
+  <p id="thing"></p>
+  <script>
+    function myMath(){
+      var ans, answer;
+      ans= document.getElementById("num1").value;
+      if (isNaN(ans) || num1<1 || num1>30){
+        answer= "not a number";
+      }else {
+        answer= ans * 3;
+      }
+      document.getElementById ("thing").innerHTML= answer;
+      alert(answer);
+    }
+  </script>
+    <p><h2>
+      Enter your information
+    </p></h2>
+    <input id="phone" placeholder="phone number">
+    <button type="button" onclick= "phonenum()">Sumit</button>
+
+    <p id="number"></p>
+    <script>
+    function phonenum(){
+      var phone1, number;
+      number= document.getElementById("phone").value;
+      if (phone ==10){
+        number= "not a valid phone number";
+      }else{
+        number= "number is valid";
+      }
+      document.getElementById ("number").innerHTML= number;
+      alert(number);
+    }
+  </script>
+  <input id= "zip" placeholder="Zip Code">
+  <button type="button" onclick="zipcode()">Sumbmit</button>
+
+  <p id="code1"></p>
+  <script>
+  function zipcode(){
+  var zip1, code1;
+  code1= document.getElementById("zip").value;
+  if (zip ==5){
+    code2= "not a valid zip code";
+  }else{
+    code1= "Valid zip code";
+  }
+  document.getElementById("code1").innerHTML= code1;
+  alert(code1);
+  }
+  </script>

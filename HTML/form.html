@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<header><h1>
+  Form
+</h1></header>
+<body>
+<input id= "name" placeholder="First Name">
+<button type= "button" onclick= "myFunction()">
+  Enter
+</button>
+<p id= "good"></p>
+<script>
+function myFunction(){
+  var first,firstname;
+  first= document.getElementById("name").value;
+  if (!isNaN(first)|| first.length<20 || first.length>0){
+    firstname= "invalid name";
+  }
+  else{
+    firstname= "name is valid";
+  }
+  document.getElementById("good").innerHTML=firstname;
+  alert(firstname);
+  }
+</script>
+</body>
+</html>
